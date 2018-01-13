@@ -7,21 +7,117 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		805E04E10087EAAA31037AC5 /* Pods_test_PhoneBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C88570409A43046700636A /* Pods_test_PhoneBook.framework */; };
 		8B1649102009ADEA00A6C67C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16490F2009ADEA00A6C67C /* AppDelegate.swift */; };
-		8B1649122009ADEA00A6C67C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649112009ADEA00A6C67C /* ViewController.swift */; };
-		8B1649152009ADEA00A6C67C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1649132009ADEA00A6C67C /* Main.storyboard */; };
 		8B1649172009ADEA00A6C67C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1649162009ADEA00A6C67C /* Assets.xcassets */; };
 		8B16491A2009ADEA00A6C67C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1649182009ADEA00A6C67C /* LaunchScreen.storyboard */; };
+		8B1649342009AF7400A6C67C /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16492D2009AF7400A6C67C /* DeepLinkOption.swift */; };
+		8B1649352009AF7400A6C67C /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16492E2009AF7400A6C67C /* Presentable.swift */; };
+		8B1649362009AF7400A6C67C /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16492F2009AF7400A6C67C /* BaseView.swift */; };
+		8B1649372009AF7400A6C67C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649302009AF7400A6C67C /* Coordinator.swift */; };
+		8B1649382009AF7400A6C67C /* RouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649322009AF7400A6C67C /* RouterImp.swift */; };
+		8B1649392009AF7400A6C67C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649332009AF7400A6C67C /* Router.swift */; };
+		8B16493B2009B02600A6C67C /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16493A2009B02600A6C67C /* BaseCoordinator.swift */; };
+		8B16493E2009B06200A6C67C /* CoreFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16493D2009B06200A6C67C /* CoreFabric.swift */; };
+		8B1649402009B06D00A6C67C /* ServiceFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16493F2009B06D00A6C67C /* ServiceFabric.swift */; };
+		8B1649432009B10A00A6C67C /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649422009B10A00A6C67C /* Storable.swift */; };
+		8B1649452009B16400A6C67C /* StorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649442009B16400A6C67C /* StorageProtocol.swift */; };
+		8B1649472009B29B00A6C67C /* RealmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649462009B29B00A6C67C /* RealmStorage.swift */; };
+		8B1649492009B53300A6C67C /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649482009B53300A6C67C /* CoreDataStorage.swift */; };
+		8B16494D2009B65300A6C67C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16494C2009B65300A6C67C /* CoreDataStack.swift */; };
+		8B1649502009B9BF00A6C67C /* ContactsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16494F2009B9BF00A6C67C /* ContactsServiceProtocol.swift */; };
+		8B1649552009B9F700A6C67C /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649542009B9F700A6C67C /* Contact.swift */; };
+		8B1649572009BA9900A6C67C /* ContactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649562009BA9900A6C67C /* ContactsService.swift */; };
+		8B16495A2009BB1E00A6C67C /* RLMContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649592009BB1E00A6C67C /* RLMContact.swift */; };
+		8B16495D2009BD9500A6C67C /* Phonebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B16495B2009BD9500A6C67C /* Phonebook.xcdatamodeld */; };
+		8B16495F2009BE6A00A6C67C /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16495E2009BE6A00A6C67C /* ContactsViewController.swift */; };
+		8B1649612009BEA300A6C67C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1649602009BEA300A6C67C /* Main.storyboard */; };
+		8B1649632009BED600A6C67C /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649622009BED600A6C67C /* ContactsTableViewCell.swift */; };
+		8B1649652009BF1A00A6C67C /* StoryboardsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649642009BF1A00A6C67C /* StoryboardsEnum.swift */; };
+		8B16496D2009BF6800A6C67C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649682009BF6800A6C67C /* UIViewControllerExtension.swift */; };
+		8B16496E2009BF6800A6C67C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649692009BF6800A6C67C /* UIViewExtensions.swift */; };
+		8B16496F2009BF6800A6C67C /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16496A2009BF6800A6C67C /* NSObjectExtensions.swift */; };
+		8B1649702009BF6800A6C67C /* UIImage+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16496B2009BF6800A6C67C /* UIImage+Hex.swift */; };
+		8B1649722009BF8F00A6C67C /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649712009BF8F00A6C67C /* ApplicationCoordinator.swift */; };
+		8B1649742009BFF500A6C67C /* CoordinatorFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649732009BFF500A6C67C /* CoordinatorFactoryProtocol.swift */; };
+		8B1649772009C08D00A6C67C /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649762009C08D00A6C67C /* CoordinatorFactory.swift */; };
+		8B1649792009C0C600A6C67C /* ContactsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649782009C0C600A6C67C /* ContactsCoordinator.swift */; };
+		8B16497B2009C18B00A6C67C /* ContactsModuleFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16497A2009C18B00A6C67C /* ContactsModuleFactoryProtocol.swift */; };
+		8B16497D2009C1B600A6C67C /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16497C2009C1B600A6C67C /* ContactsView.swift */; };
+		8B16497F2009C26F00A6C67C /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16497E2009C26F00A6C67C /* ModuleFactory.swift */; };
+		8B1649812009C29E00A6C67C /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649802009C29E00A6C67C /* ContactsModel.swift */; };
+		8B1649842009CDBE00A6C67C /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B1649832009CDBE00A6C67C /* contacts.json */; };
+		8B1649912009F4AD00A6C67C /* ContactInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649902009F4AD00A6C67C /* ContactInfoTableViewController.swift */; };
+		8B1649932009F69C00A6C67C /* ContactsInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649922009F69C00A6C67C /* ContactsInfoModel.swift */; };
+		8B1649952009F89600A6C67C /* ContactInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649942009F89600A6C67C /* ContactInfoView.swift */; };
+		8B164997200A005F00A6C67C /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B164996200A005F00A6C67C /* SharedData.swift */; };
+		8B16499C200A329400A6C67C /* NewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16499B200A329400A6C67C /* NewContactViewController.swift */; };
+		8B16499E200A332B00A6C67C /* NewContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16499D200A332B00A6C67C /* NewContactModel.swift */; };
+		8B1649A0200A352300A6C67C /* NewContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16499F200A352300A6C67C /* NewContactView.swift */; };
+		8B1649A3200A36CD00A6C67C /* AvatarDecoratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649A2200A36CD00A6C67C /* AvatarDecoratorProtocol.swift */; };
+		8B1649A5200A378000A6C67C /* AvatarDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649A4200A378000A6C67C /* AvatarDecorator.swift */; };
+		8B1649A8200A37CB00A6C67C /* MediaCacheProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649A7200A37CB00A6C67C /* MediaCacheProtocol.swift */; };
+		8B1649AA200A37E800A6C67C /* MediaCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649A9200A37E800A6C67C /* MediaCache.swift */; };
+		8B1649AC200A3D7A00A6C67C /* UIScrollViewExtenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649AB200A3D7A00A6C67C /* UIScrollViewExtenstions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A287C088032E39C357D2FFA /* Pods-test_PhoneBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_PhoneBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test_PhoneBook/Pods-test_PhoneBook.debug.xcconfig"; sourceTree = "<group>"; };
+		86C88570409A43046700636A /* Pods_test_PhoneBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_PhoneBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B16490C2009ADEA00A6C67C /* test_PhoneBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_PhoneBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B16490F2009ADEA00A6C67C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B1649112009ADEA00A6C67C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8B1649142009ADEA00A6C67C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B1649162009ADEA00A6C67C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B1649192009ADEA00A6C67C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B16491B2009ADEA00A6C67C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B16492D2009AF7400A6C67C /* DeepLinkOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkOption.swift; sourceTree = "<group>"; };
+		8B16492E2009AF7400A6C67C /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		8B16492F2009AF7400A6C67C /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		8B1649302009AF7400A6C67C /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8B1649322009AF7400A6C67C /* RouterImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterImp.swift; sourceTree = "<group>"; };
+		8B1649332009AF7400A6C67C /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8B16493A2009B02600A6C67C /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		8B16493D2009B06200A6C67C /* CoreFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreFabric.swift; sourceTree = "<group>"; };
+		8B16493F2009B06D00A6C67C /* ServiceFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFabric.swift; sourceTree = "<group>"; };
+		8B1649422009B10A00A6C67C /* Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
+		8B1649442009B16400A6C67C /* StorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProtocol.swift; sourceTree = "<group>"; };
+		8B1649462009B29B00A6C67C /* RealmStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorage.swift; sourceTree = "<group>"; };
+		8B1649482009B53300A6C67C /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		8B16494C2009B65300A6C67C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		8B16494F2009B9BF00A6C67C /* ContactsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsServiceProtocol.swift; sourceTree = "<group>"; };
+		8B1649542009B9F700A6C67C /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		8B1649562009BA9900A6C67C /* ContactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsService.swift; sourceTree = "<group>"; };
+		8B1649592009BB1E00A6C67C /* RLMContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMContact.swift; sourceTree = "<group>"; };
+		8B16495C2009BD9500A6C67C /* CDContact.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDContact.xcdatamodel; sourceTree = "<group>"; };
+		8B16495E2009BE6A00A6C67C /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		8B1649602009BEA300A6C67C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8B1649622009BED600A6C67C /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
+		8B1649642009BF1A00A6C67C /* StoryboardsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardsEnum.swift; sourceTree = "<group>"; };
+		8B1649682009BF6800A6C67C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		8B1649692009BF6800A6C67C /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		8B16496A2009BF6800A6C67C /* NSObjectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
+		8B16496B2009BF6800A6C67C /* UIImage+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Hex.swift"; sourceTree = "<group>"; };
+		8B1649712009BF8F00A6C67C /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		8B1649732009BFF500A6C67C /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
+		8B1649762009C08D00A6C67C /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		8B1649782009C0C600A6C67C /* ContactsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCoordinator.swift; sourceTree = "<group>"; };
+		8B16497A2009C18B00A6C67C /* ContactsModuleFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModuleFactoryProtocol.swift; sourceTree = "<group>"; };
+		8B16497C2009C1B600A6C67C /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		8B16497E2009C26F00A6C67C /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
+		8B1649802009C29E00A6C67C /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		8B1649832009CDBE00A6C67C /* contacts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = contacts.json; sourceTree = "<group>"; };
+		8B1649902009F4AD00A6C67C /* ContactInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoTableViewController.swift; sourceTree = "<group>"; };
+		8B1649922009F69C00A6C67C /* ContactsInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsInfoModel.swift; sourceTree = "<group>"; };
+		8B1649942009F89600A6C67C /* ContactInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoView.swift; sourceTree = "<group>"; };
+		8B164996200A005F00A6C67C /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		8B16499B200A329400A6C67C /* NewContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactViewController.swift; sourceTree = "<group>"; };
+		8B16499D200A332B00A6C67C /* NewContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactModel.swift; sourceTree = "<group>"; };
+		8B16499F200A352300A6C67C /* NewContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactView.swift; sourceTree = "<group>"; };
+		8B1649A2200A36CD00A6C67C /* AvatarDecoratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarDecoratorProtocol.swift; sourceTree = "<group>"; };
+		8B1649A4200A378000A6C67C /* AvatarDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarDecorator.swift; sourceTree = "<group>"; };
+		8B1649A7200A37CB00A6C67C /* MediaCacheProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCacheProtocol.swift; sourceTree = "<group>"; };
+		8B1649A9200A37E800A6C67C /* MediaCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCache.swift; sourceTree = "<group>"; };
+		8B1649AB200A3D7A00A6C67C /* UIScrollViewExtenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtenstions.swift; sourceTree = "<group>"; };
+		A42C21C140C1FF2AF80373B1 /* Pods-test_PhoneBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_PhoneBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-test_PhoneBook/Pods-test_PhoneBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				805E04E10087EAAA31037AC5 /* Pods_test_PhoneBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +137,8 @@
 			children = (
 				8B16490E2009ADEA00A6C67C /* test_PhoneBook */,
 				8B16490D2009ADEA00A6C67C /* Products */,
+				FC7C42AD0E751D5D3BF6878F /* Pods */,
+				DF202BE88C42169CB6FC7096 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +153,333 @@
 		8B16490E2009ADEA00A6C67C /* test_PhoneBook */ = {
 			isa = PBXGroup;
 			children = (
-				8B16490F2009ADEA00A6C67C /* AppDelegate.swift */,
-				8B1649112009ADEA00A6C67C /* ViewController.swift */,
-				8B1649132009ADEA00A6C67C /* Main.storyboard */,
-				8B1649162009ADEA00A6C67C /* Assets.xcassets */,
-				8B1649182009ADEA00A6C67C /* LaunchScreen.storyboard */,
-				8B16491B2009ADEA00A6C67C /* Info.plist */,
+				8B1649242009AEB200A6C67C /* Application */,
+				8B16492A2009AEEE00A6C67C /* Factories */,
+				8B1649662009BF6800A6C67C /* Extensions */,
+				8B1649292009AEE100A6C67C /* Flows */,
+				8B1649282009AEDC00A6C67C /* Modules */,
+				8B1649252009AEC500A6C67C /* SOA */,
+				8B1649232009AE5800A6C67C /* Views */,
+				8B1649222009AE5100A6C67C /* Storyboards */,
+				8B1649212009AE3400A6C67C /* Resources */,
 			);
 			path = test_PhoneBook;
+			sourceTree = "<group>";
+		};
+		8B1649212009AE3400A6C67C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649162009ADEA00A6C67C /* Assets.xcassets */,
+				8B1649182009ADEA00A6C67C /* LaunchScreen.storyboard */,
+				8B1649832009CDBE00A6C67C /* contacts.json */,
+				8B16491B2009ADEA00A6C67C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B1649222009AE5100A6C67C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649602009BEA300A6C67C /* Main.storyboard */,
+				8B1649642009BF1A00A6C67C /* StoryboardsEnum.swift */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8B1649232009AE5800A6C67C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B1649242009AEB200A6C67C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8B16490F2009ADEA00A6C67C /* AppDelegate.swift */,
+				8B1649712009BF8F00A6C67C /* ApplicationCoordinator.swift */,
+				8B164996200A005F00A6C67C /* SharedData.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8B1649252009AEC500A6C67C /* SOA */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649262009AEC900A6C67C /* Services */,
+				8B1649272009AECE00A6C67C /* Core components */,
+			);
+			path = SOA;
+			sourceTree = "<group>";
+		};
+		8B1649262009AEC900A6C67C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8B16494E2009B9AC00A6C67C /* ContactsService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8B1649272009AECE00A6C67C /* Core components */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649A6200A37BD00A6C67C /* Media cache */,
+				8B1649A1200A36B300A6C67C /* Avatar decorator */,
+				8B1649412009B09A00A6C67C /* Storage */,
+			);
+			path = "Core components";
+			sourceTree = "<group>";
+		};
+		8B1649282009AEDC00A6C67C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8B164998200A327200A6C67C /* New contact */,
+				8B16498D2009F48A00A6C67C /* Contact info */,
+				8B1649512009B9E100A6C67C /* Contacts */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8B1649292009AEE100A6C67C /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				8B16492C2009AF7400A6C67C /* Protocols */,
+				8B16493A2009B02600A6C67C /* BaseCoordinator.swift */,
+				8B1649752009C03300A6C67C /* ContactsCoordinator */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		8B16492A2009AEEE00A6C67C /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				8B16493C2009B05700A6C67C /* Protocols */,
+				8B16493D2009B06200A6C67C /* CoreFabric.swift */,
+				8B1649762009C08D00A6C67C /* CoordinatorFactory.swift */,
+				8B16493F2009B06D00A6C67C /* ServiceFabric.swift */,
+				8B16497E2009C26F00A6C67C /* ModuleFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		8B16492C2009AF7400A6C67C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8B16492D2009AF7400A6C67C /* DeepLinkOption.swift */,
+				8B16492E2009AF7400A6C67C /* Presentable.swift */,
+				8B16492F2009AF7400A6C67C /* BaseView.swift */,
+				8B1649302009AF7400A6C67C /* Coordinator.swift */,
+				8B1649312009AF7400A6C67C /* Router */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8B1649312009AF7400A6C67C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649322009AF7400A6C67C /* RouterImp.swift */,
+				8B1649332009AF7400A6C67C /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8B16493C2009B05700A6C67C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649732009BFF500A6C67C /* CoordinatorFactoryProtocol.swift */,
+				8B16497A2009C18B00A6C67C /* ContactsModuleFactoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8B1649412009B09A00A6C67C /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649422009B10A00A6C67C /* Storable.swift */,
+				8B1649442009B16400A6C67C /* StorageProtocol.swift */,
+				8B16494B2009B64400A6C67C /* Realm */,
+				8B16494A2009B63F00A6C67C /* CoreData */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		8B16494A2009B63F00A6C67C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649482009B53300A6C67C /* CoreDataStorage.swift */,
+				8B16494C2009B65300A6C67C /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		8B16494B2009B64400A6C67C /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649462009B29B00A6C67C /* RealmStorage.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		8B16494E2009B9AC00A6C67C /* ContactsService */ = {
+			isa = PBXGroup;
+			children = (
+				8B16494F2009B9BF00A6C67C /* ContactsServiceProtocol.swift */,
+				8B1649562009BA9900A6C67C /* ContactsService.swift */,
+			);
+			path = ContactsService;
+			sourceTree = "<group>";
+		};
+		8B1649512009B9E100A6C67C /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649532009B9EB00A6C67C /* Model */,
+				8B1649522009B9E700A6C67C /* View */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		8B1649522009B9E700A6C67C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B16495E2009BE6A00A6C67C /* ContactsViewController.swift */,
+				8B1649622009BED600A6C67C /* ContactsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B1649532009B9EB00A6C67C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649822009C2A400A6C67C /* Data model */,
+				8B1649802009C29E00A6C67C /* ContactsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B1649582009BB0A00A6C67C /* CDContact */ = {
+			isa = PBXGroup;
+			children = (
+				8B16495B2009BD9500A6C67C /* Phonebook.xcdatamodeld */,
+			);
+			path = CDContact;
+			sourceTree = "<group>";
+		};
+		8B1649662009BF6800A6C67C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649682009BF6800A6C67C /* UIViewControllerExtension.swift */,
+				8B1649692009BF6800A6C67C /* UIViewExtensions.swift */,
+				8B16496A2009BF6800A6C67C /* NSObjectExtensions.swift */,
+				8B16496B2009BF6800A6C67C /* UIImage+Hex.swift */,
+				8B1649AB200A3D7A00A6C67C /* UIScrollViewExtenstions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8B1649752009C03300A6C67C /* ContactsCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649782009C0C600A6C67C /* ContactsCoordinator.swift */,
+				8B16497C2009C1B600A6C67C /* ContactsView.swift */,
+				8B1649942009F89600A6C67C /* ContactInfoView.swift */,
+				8B16499F200A352300A6C67C /* NewContactView.swift */,
+			);
+			path = ContactsCoordinator;
+			sourceTree = "<group>";
+		};
+		8B1649822009C2A400A6C67C /* Data model */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649592009BB1E00A6C67C /* RLMContact.swift */,
+				8B1649542009B9F700A6C67C /* Contact.swift */,
+				8B1649582009BB0A00A6C67C /* CDContact */,
+			);
+			path = "Data model";
+			sourceTree = "<group>";
+		};
+		8B16498D2009F48A00A6C67C /* Contact info */ = {
+			isa = PBXGroup;
+			children = (
+				8B16498F2009F49B00A6C67C /* Model */,
+				8B16498E2009F49700A6C67C /* View */,
+			);
+			path = "Contact info";
+			sourceTree = "<group>";
+		};
+		8B16498E2009F49700A6C67C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649902009F4AD00A6C67C /* ContactInfoTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B16498F2009F49B00A6C67C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649922009F69C00A6C67C /* ContactsInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B164998200A327200A6C67C /* New contact */ = {
+			isa = PBXGroup;
+			children = (
+				8B16499A200A327D00A6C67C /* Model */,
+				8B164999200A327900A6C67C /* View */,
+			);
+			path = "New contact";
+			sourceTree = "<group>";
+		};
+		8B164999200A327900A6C67C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B16499B200A329400A6C67C /* NewContactViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B16499A200A327D00A6C67C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B16499D200A332B00A6C67C /* NewContactModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B1649A1200A36B300A6C67C /* Avatar decorator */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649A2200A36CD00A6C67C /* AvatarDecoratorProtocol.swift */,
+				8B1649A4200A378000A6C67C /* AvatarDecorator.swift */,
+			);
+			path = "Avatar decorator";
+			sourceTree = "<group>";
+		};
+		8B1649A6200A37BD00A6C67C /* Media cache */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649A7200A37CB00A6C67C /* MediaCacheProtocol.swift */,
+				8B1649A9200A37E800A6C67C /* MediaCache.swift */,
+			);
+			path = "Media cache";
+			sourceTree = "<group>";
+		};
+		DF202BE88C42169CB6FC7096 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86C88570409A43046700636A /* Pods_test_PhoneBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC7C42AD0E751D5D3BF6878F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A287C088032E39C357D2FFA /* Pods-test_PhoneBook.debug.xcconfig */,
+				A42C21C140C1FF2AF80373B1 /* Pods-test_PhoneBook.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +489,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B16491E2009ADEA00A6C67C /* Build configuration list for PBXNativeTarget "test_PhoneBook" */;
 			buildPhases = (
+				D06589261FED33110EF45FBD /* [CP] Check Pods Manifest.lock */,
 				8B1649082009ADEA00A6C67C /* Sources */,
 				8B1649092009ADEA00A6C67C /* Frameworks */,
 				8B16490A2009ADEA00A6C67C /* Resources */,
+				676C96B32D8A92DD878191D7 /* [CP] Embed Pods Frameworks */,
+				DCAC32E5CDAC43859619C3A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,35 +544,133 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1649842009CDBE00A6C67C /* contacts.json in Resources */,
+				8B1649612009BEA300A6C67C /* Main.storyboard in Resources */,
 				8B16491A2009ADEA00A6C67C /* LaunchScreen.storyboard in Resources */,
 				8B1649172009ADEA00A6C67C /* Assets.xcassets in Resources */,
-				8B1649152009ADEA00A6C67C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		676C96B32D8A92DD878191D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-test_PhoneBook/Pods-test_PhoneBook-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test_PhoneBook/Pods-test_PhoneBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D06589261FED33110EF45FBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test_PhoneBook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCAC32E5CDAC43859619C3A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test_PhoneBook/Pods-test_PhoneBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B1649082009ADEA00A6C67C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B1649122009ADEA00A6C67C /* ViewController.swift in Sources */,
+				8B1649632009BED600A6C67C /* ContactsTableViewCell.swift in Sources */,
+				8B16495A2009BB1E00A6C67C /* RLMContact.swift in Sources */,
+				8B1649AC200A3D7A00A6C67C /* UIScrollViewExtenstions.swift in Sources */,
+				8B16496D2009BF6800A6C67C /* UIViewControllerExtension.swift in Sources */,
+				8B1649652009BF1A00A6C67C /* StoryboardsEnum.swift in Sources */,
+				8B1649742009BFF500A6C67C /* CoordinatorFactoryProtocol.swift in Sources */,
+				8B1649AA200A37E800A6C67C /* MediaCache.swift in Sources */,
+				8B16494D2009B65300A6C67C /* CoreDataStack.swift in Sources */,
+				8B16499C200A329400A6C67C /* NewContactViewController.swift in Sources */,
+				8B1649402009B06D00A6C67C /* ServiceFabric.swift in Sources */,
+				8B1649572009BA9900A6C67C /* ContactsService.swift in Sources */,
+				8B1649A5200A378000A6C67C /* AvatarDecorator.swift in Sources */,
+				8B1649342009AF7400A6C67C /* DeepLinkOption.swift in Sources */,
+				8B1649772009C08D00A6C67C /* CoordinatorFactory.swift in Sources */,
+				8B16497F2009C26F00A6C67C /* ModuleFactory.swift in Sources */,
 				8B1649102009ADEA00A6C67C /* AppDelegate.swift in Sources */,
+				8B164997200A005F00A6C67C /* SharedData.swift in Sources */,
+				8B1649792009C0C600A6C67C /* ContactsCoordinator.swift in Sources */,
+				8B1649702009BF6800A6C67C /* UIImage+Hex.swift in Sources */,
+				8B1649432009B10A00A6C67C /* Storable.swift in Sources */,
+				8B1649372009AF7400A6C67C /* Coordinator.swift in Sources */,
+				8B16495F2009BE6A00A6C67C /* ContactsViewController.swift in Sources */,
+				8B1649912009F4AD00A6C67C /* ContactInfoTableViewController.swift in Sources */,
+				8B16499E200A332B00A6C67C /* NewContactModel.swift in Sources */,
+				8B1649392009AF7400A6C67C /* Router.swift in Sources */,
+				8B16496F2009BF6800A6C67C /* NSObjectExtensions.swift in Sources */,
+				8B16497D2009C1B600A6C67C /* ContactsView.swift in Sources */,
+				8B1649812009C29E00A6C67C /* ContactsModel.swift in Sources */,
+				8B1649932009F69C00A6C67C /* ContactsInfoModel.swift in Sources */,
+				8B1649472009B29B00A6C67C /* RealmStorage.swift in Sources */,
+				8B16493E2009B06200A6C67C /* CoreFabric.swift in Sources */,
+				8B1649A3200A36CD00A6C67C /* AvatarDecoratorProtocol.swift in Sources */,
+				8B16496E2009BF6800A6C67C /* UIViewExtensions.swift in Sources */,
+				8B16497B2009C18B00A6C67C /* ContactsModuleFactoryProtocol.swift in Sources */,
+				8B1649452009B16400A6C67C /* StorageProtocol.swift in Sources */,
+				8B1649552009B9F700A6C67C /* Contact.swift in Sources */,
+				8B1649502009B9BF00A6C67C /* ContactsServiceProtocol.swift in Sources */,
+				8B1649382009AF7400A6C67C /* RouterImp.swift in Sources */,
+				8B1649352009AF7400A6C67C /* Presentable.swift in Sources */,
+				8B1649362009AF7400A6C67C /* BaseView.swift in Sources */,
+				8B1649952009F89600A6C67C /* ContactInfoView.swift in Sources */,
+				8B16495D2009BD9500A6C67C /* Phonebook.xcdatamodeld in Sources */,
+				8B1649A0200A352300A6C67C /* NewContactView.swift in Sources */,
+				8B1649A8200A37CB00A6C67C /* MediaCacheProtocol.swift in Sources */,
+				8B1649492009B53300A6C67C /* CoreDataStorage.swift in Sources */,
+				8B16493B2009B02600A6C67C /* BaseCoordinator.swift in Sources */,
+				8B1649722009BF8F00A6C67C /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8B1649132009ADEA00A6C67C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8B1649142009ADEA00A6C67C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8B1649182009ADEA00A6C67C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,31 +791,35 @@
 		};
 		8B16491F2009ADEA00A6C67C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A287C088032E39C357D2FFA /* Pods-test_PhoneBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4DV477A9TM;
-				INFOPLIST_FILE = test_PhoneBook/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/test_PhoneBook/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ps.test-PhoneBook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8B1649202009ADEA00A6C67C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A42C21C140C1FF2AF80373B1 /* Pods-test_PhoneBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4DV477A9TM;
-				INFOPLIST_FILE = test_PhoneBook/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/test_PhoneBook/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ps.test-PhoneBook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -322,6 +845,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8B16495B2009BD9500A6C67C /* Phonebook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8B16495C2009BD9500A6C67C /* CDContact.xcdatamodel */,
+			);
+			currentVersion = 8B16495C2009BD9500A6C67C /* CDContact.xcdatamodel */;
+			path = Phonebook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8B1649042009ADEA00A6C67C /* Project object */;
 }
