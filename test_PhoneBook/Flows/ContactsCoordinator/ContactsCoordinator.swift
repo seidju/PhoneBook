@@ -30,7 +30,7 @@ final class ContactsCoordinator: BaseCoordinator {
     contactsVc.didSelectNewContact = { [weak self] in
       self?.showNewContact()
     }
-    router.push(contactsVc)
+    router.setRootModule(contactsVc)
   }
   
   func showContactInfo(contact: Contact) {

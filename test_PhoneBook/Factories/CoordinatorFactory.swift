@@ -14,6 +14,9 @@ class CoordinatorFactory: CoordinatorFactoryProtocol {
     let contactCoordinator = ContactsCoordinator(router: router, moduleFactory: ModuleFactory())
     return contactCoordinator
   }
-  
+  func makeOnboardingCoordinator(router: Router) -> Coordinator & OnboardingCoordinatorOutput {
+    let onboardingCoordinator = OnboardingCoordinator(with: ModuleFactory(), router: router)
+    return onboardingCoordinator
+  }
   
 }

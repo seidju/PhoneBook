@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding Page-->
+        <scene sceneID="Xjf-Mq-bBg">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingPageOne" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gza-uo-0R7" customClass="OnboardingPage" customModule="test_PhoneBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yVq-h6-fDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="aj7-2C-zWt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u0j-38-mYB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is test app, that shows fake contact list, fetched from local JSON file" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOu-x7-qtK">
+                                <rect key="frame" x="16" y="320" width="343" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nOu-x7-qtK" secondAttribute="trailing" constant="16" id="He0-WY-5vj"/>
+                            <constraint firstItem="nOu-x7-qtK" firstAttribute="centerY" secondItem="u0j-38-mYB" secondAttribute="centerY" id="gwq-Bv-UHm"/>
+                            <constraint firstItem="nOu-x7-qtK" firstAttribute="leading" secondItem="u0j-38-mYB" secondAttribute="leading" constant="16" id="sXq-9L-spI"/>
+                            <constraint firstItem="nOu-x7-qtK" firstAttribute="centerX" secondItem="u0j-38-mYB" secondAttribute="centerX" id="wSB-sb-ITQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Q6Y-0N-qjM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ghu-zR-bYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-838" y="140"/>
+        </scene>
+        <!--Onboarding Page-->
+        <scene sceneID="Rlv-NI-5np">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingPageTwo" id="AFf-uH-TdI" customClass="OnboardingPage" customModule="test_PhoneBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wkw-b7-alj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fj6-b2-QPP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ePC-Ze-edD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It uses Service Oriented Architecture (SOA) and Coorinators to split object responsibilities" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FV-ai-TZ1">
+                                <rect key="frame" x="16" y="320.5" width="343" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0FV-ai-TZ1" secondAttribute="trailing" constant="16" id="1YJ-Bc-IMJ"/>
+                            <constraint firstItem="0FV-ai-TZ1" firstAttribute="centerY" secondItem="ePC-Ze-edD" secondAttribute="centerY" id="86T-wy-zjd"/>
+                            <constraint firstItem="0FV-ai-TZ1" firstAttribute="centerX" secondItem="ePC-Ze-edD" secondAttribute="centerX" id="T6C-Lw-keT"/>
+                            <constraint firstItem="0FV-ai-TZ1" firstAttribute="leading" secondItem="ePC-Ze-edD" secondAttribute="leading" constant="16" id="cz4-rt-QLm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="r8Q-Nr-BNQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uDk-Kk-JfC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175" y="140"/>
+        </scene>
+        <!--Onboarding View Controler-->
+        <scene sceneID="NWL-p2-nUx">
+            <objects>
+                <pageViewController storyboardIdentifier="OnboardingViewControler" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="min" id="xCw-q4-5xC" customClass="OnboardingViewControler" customModule="test_PhoneBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CgN-G6-YEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175" y="842"/>
+        </scene>
+        <!--Onboarding Page-->
+        <scene sceneID="FjQ-yM-C8i">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingPageThree" id="uGy-kh-POu" customClass="OnboardingPage" customModule="test_PhoneBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sNh-Jc-ZM8"/>
+                        <viewControllerLayoutGuide type="bottom" id="RTP-RQ-VXq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YZj-Xs-d4i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It also have abstract storage layer that can be possibly userd with any Database framework" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sn-Ez-omq">
+                                <rect key="frame" x="16" y="320.5" width="343" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhj-hz-qd6">
+                                <rect key="frame" x="159.5" y="387" width="55" height="30"/>
+                                <state key="normal" title="Let's go"/>
+                                <connections>
+                                    <action selector="finish:" destination="uGy-kh-POu" eventType="touchUpInside" id="qNj-Gv-rVN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jhj-hz-qd6" firstAttribute="top" secondItem="3sn-Ez-omq" secondAttribute="bottom" constant="40" id="2sc-SK-RtE"/>
+                            <constraint firstItem="3sn-Ez-omq" firstAttribute="leading" secondItem="YZj-Xs-d4i" secondAttribute="leading" constant="16" id="Haf-S6-QXY"/>
+                            <constraint firstItem="3sn-Ez-omq" firstAttribute="centerY" secondItem="YZj-Xs-d4i" secondAttribute="centerY" id="I2o-GO-idG"/>
+                            <constraint firstItem="3sn-Ez-omq" firstAttribute="centerX" secondItem="YZj-Xs-d4i" secondAttribute="centerX" id="RqJ-Aq-2rb"/>
+                            <constraint firstAttribute="trailing" secondItem="3sn-Ez-omq" secondAttribute="trailing" constant="16" id="sfB-Sc-bUf"/>
+                            <constraint firstItem="jhj-hz-qd6" firstAttribute="centerX" secondItem="YZj-Xs-d4i" secondAttribute="centerX" id="w7w-Ce-K4w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ykS-GT-MbW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bk7-hs-BpK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="551" y="140"/>
+        </scene>
+    </scenes>
+</document>

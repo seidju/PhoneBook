@@ -8,9 +8,14 @@
 
 import Foundation
 
-class ModuleFactory: ContactsModuleFactoryProtocol {
+class ModuleFactory: OnboardingModuleFactoryProtocol, ContactsModuleFactoryProtocol {
   
   private let contactsService = ServiceFabric().createContactsService()
+  
+  func createOnboardingOutput() -> OnboardingView {
+    let onboardingVc = OnboardingViewControler.controllerFromStoryboard(.onboarding)
+    return onboardingVc
+  }
   
   func createContactsOutput() -> ContactsView {
     let contactsVc = ContactsViewController.controllerFromStoryboard(.main)

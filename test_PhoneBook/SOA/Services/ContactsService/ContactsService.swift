@@ -8,6 +8,8 @@
 
 import Foundation
 
+
+//Currently impelementing CoreData 
 class ContactsService: ContactsServiceProtocol {
   
   private var storage: StorageProtocol

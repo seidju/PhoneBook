@@ -90,7 +90,6 @@ class ContactInfoTableViewController: UITableViewController, ContactInfoView {
       }
       saveChanges()
     }
-
     navigationItem.setRightBarButton(button, animated: true)
   }
   

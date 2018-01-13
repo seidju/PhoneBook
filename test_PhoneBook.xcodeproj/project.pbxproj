@@ -59,6 +59,12 @@
 		8B1649A8200A37CB00A6C67C /* MediaCacheProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649A7200A37CB00A6C67C /* MediaCacheProtocol.swift */; };
 		8B1649AA200A37E800A6C67C /* MediaCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649A9200A37E800A6C67C /* MediaCache.swift */; };
 		8B1649AC200A3D7A00A6C67C /* UIScrollViewExtenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649AB200A3D7A00A6C67C /* UIScrollViewExtenstions.swift */; };
+		8B1649B0200A5A4A00A6C67C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649AF200A5A4A00A6C67C /* OnboardingViewController.swift */; };
+		8B1649B2200A5A6700A6C67C /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1649B1200A5A6700A6C67C /* Onboarding.storyboard */; };
+		8B1649B5200A5BE800A6C67C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649B4200A5BE800A6C67C /* OnboardingView.swift */; };
+		8B1649B7200A5C1F00A6C67C /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649B6200A5C1F00A6C67C /* OnboardingCoordinator.swift */; };
+		8B1649B9200A5C4800A6C67C /* OnboardingCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649B8200A5C4800A6C67C /* OnboardingCoordinatorOutput.swift */; };
+		8B1649BB200A5C7F00A6C67C /* OnboardingModuleFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1649BA200A5C7F00A6C67C /* OnboardingModuleFactoryProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +123,12 @@
 		8B1649A7200A37CB00A6C67C /* MediaCacheProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCacheProtocol.swift; sourceTree = "<group>"; };
 		8B1649A9200A37E800A6C67C /* MediaCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCache.swift; sourceTree = "<group>"; };
 		8B1649AB200A3D7A00A6C67C /* UIScrollViewExtenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtenstions.swift; sourceTree = "<group>"; };
+		8B1649AF200A5A4A00A6C67C /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		8B1649B1200A5A6700A6C67C /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		8B1649B4200A5BE800A6C67C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8B1649B6200A5C1F00A6C67C /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		8B1649B8200A5C4800A6C67C /* OnboardingCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinatorOutput.swift; sourceTree = "<group>"; };
+		8B1649BA200A5C7F00A6C67C /* OnboardingModuleFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModuleFactoryProtocol.swift; sourceTree = "<group>"; };
 		A42C21C140C1FF2AF80373B1 /* Pods-test_PhoneBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_PhoneBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-test_PhoneBook/Pods-test_PhoneBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				8B1649602009BEA300A6C67C /* Main.storyboard */,
+				8B1649B1200A5A6700A6C67C /* Onboarding.storyboard */,
 				8B1649642009BF1A00A6C67C /* StoryboardsEnum.swift */,
 			);
 			path = Storyboards;
@@ -233,6 +246,7 @@
 		8B1649282009AEDC00A6C67C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8B1649AD200A5A2F00A6C67C /* Onboarding */,
 				8B164998200A327200A6C67C /* New contact */,
 				8B16498D2009F48A00A6C67C /* Contact info */,
 				8B1649512009B9E100A6C67C /* Contacts */,
@@ -245,6 +259,7 @@
 			children = (
 				8B16492C2009AF7400A6C67C /* Protocols */,
 				8B16493A2009B02600A6C67C /* BaseCoordinator.swift */,
+				8B1649B3200A5BD900A6C67C /* OnboardingCoordinator */,
 				8B1649752009C03300A6C67C /* ContactsCoordinator */,
 			);
 			path = Flows;
@@ -288,6 +303,7 @@
 			children = (
 				8B1649732009BFF500A6C67C /* CoordinatorFactoryProtocol.swift */,
 				8B16497A2009C18B00A6C67C /* ContactsModuleFactoryProtocol.swift */,
+				8B1649BA200A5C7F00A6C67C /* OnboardingModuleFactoryProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -465,6 +481,32 @@
 			path = "Media cache";
 			sourceTree = "<group>";
 		};
+		8B1649AD200A5A2F00A6C67C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649AE200A5A3A00A6C67C /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8B1649AE200A5A3A00A6C67C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649AF200A5A4A00A6C67C /* OnboardingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B1649B3200A5BD900A6C67C /* OnboardingCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8B1649B4200A5BE800A6C67C /* OnboardingView.swift */,
+				8B1649B6200A5C1F00A6C67C /* OnboardingCoordinator.swift */,
+				8B1649B8200A5C4800A6C67C /* OnboardingCoordinatorOutput.swift */,
+			);
+			path = OnboardingCoordinator;
+			sourceTree = "<group>";
+		};
 		DF202BE88C42169CB6FC7096 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -545,6 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B1649842009CDBE00A6C67C /* contacts.json in Resources */,
+				8B1649B2200A5A6700A6C67C /* Onboarding.storyboard in Resources */,
 				8B1649612009BEA300A6C67C /* Main.storyboard in Resources */,
 				8B16491A2009ADEA00A6C67C /* LaunchScreen.storyboard in Resources */,
 				8B1649172009ADEA00A6C67C /* Assets.xcassets in Resources */,
@@ -622,6 +665,7 @@
 				8B16495A2009BB1E00A6C67C /* RLMContact.swift in Sources */,
 				8B1649AC200A3D7A00A6C67C /* UIScrollViewExtenstions.swift in Sources */,
 				8B16496D2009BF6800A6C67C /* UIViewControllerExtension.swift in Sources */,
+				8B1649BB200A5C7F00A6C67C /* OnboardingModuleFactoryProtocol.swift in Sources */,
 				8B1649652009BF1A00A6C67C /* StoryboardsEnum.swift in Sources */,
 				8B1649742009BFF500A6C67C /* CoordinatorFactoryProtocol.swift in Sources */,
 				8B1649AA200A37E800A6C67C /* MediaCache.swift in Sources */,
@@ -637,6 +681,7 @@
 				8B164997200A005F00A6C67C /* SharedData.swift in Sources */,
 				8B1649792009C0C600A6C67C /* ContactsCoordinator.swift in Sources */,
 				8B1649702009BF6800A6C67C /* UIImage+Hex.swift in Sources */,
+				8B1649B7200A5C1F00A6C67C /* OnboardingCoordinator.swift in Sources */,
 				8B1649432009B10A00A6C67C /* Storable.swift in Sources */,
 				8B1649372009AF7400A6C67C /* Coordinator.swift in Sources */,
 				8B16495F2009BE6A00A6C67C /* ContactsViewController.swift in Sources */,
@@ -661,10 +706,13 @@
 				8B1649952009F89600A6C67C /* ContactInfoView.swift in Sources */,
 				8B16495D2009BD9500A6C67C /* Phonebook.xcdatamodeld in Sources */,
 				8B1649A0200A352300A6C67C /* NewContactView.swift in Sources */,
+				8B1649B0200A5A4A00A6C67C /* OnboardingViewController.swift in Sources */,
+				8B1649B9200A5C4800A6C67C /* OnboardingCoordinatorOutput.swift in Sources */,
 				8B1649A8200A37CB00A6C67C /* MediaCacheProtocol.swift in Sources */,
 				8B1649492009B53300A6C67C /* CoreDataStorage.swift in Sources */,
 				8B16493B2009B02600A6C67C /* BaseCoordinator.swift in Sources */,
 				8B1649722009BF8F00A6C67C /* ApplicationCoordinator.swift in Sources */,
+				8B1649B5200A5BE800A6C67C /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

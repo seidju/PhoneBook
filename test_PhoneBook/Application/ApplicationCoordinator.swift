@@ -11,7 +11,7 @@ import Foundation
 fileprivate enum LaunchInstructor {
   case main, onboarding
   
-  static func configure(tutorialWasShown: Bool = true) -> LaunchInstructor {
+  static func configure(tutorialWasShown: Bool = false) -> LaunchInstructor {
     switch tutorialWasShown {
       case false: return .onboarding
       case true: return .main
@@ -25,7 +25,7 @@ final class ApplicationCoordinator: BaseCoordinator {
   private let router: Router
   
   private var instructor: LaunchInstructor {
-    return LaunchInstructor.configure()
+    return LaunchInstructor.configure(tutorialWasShown: !SharedData.shared.firstStart)
   }
   
   init(router: Router, coordinatorFactory: CoordinatorFactory) {
@@ -57,19 +57,13 @@ final class ApplicationCoordinator: BaseCoordinator {
   
   
   private func runOnboardingFlow() {
-//    let coordinator = coordinatorFactory.makeOnboardingCoordinator(router: router)
-//    coordinator.finishFlow = { [weak self, weak coordinator] in
-//      self?.start(with: DeepLinkOption.signUp)
-//      self?.removeDependency(coordinator)
-//    }
-//    addDependency(coordinator)
-//    coordinator.start()
+    let coordinator = coordinatorFactory.makeOnboardingCoordinator(router: router)
+    coordinator.finishFlow = { [weak self, weak coordinator] in
+      self?.start(with: DeepLinkOption.main)
+      self?.removeDependency(coordinator)
+    }
+    addDependency(coordinator)
+    coordinator.start()
   }
   
-//  private func runMainFlow() {
-//    let (coordinator, module) = coordinatorFactory.makeTabbarCoordinator(router: router)
-//    addDependency(coordinator)
-//    router.setRootModule(module, hideBar: true)
-//    coordinator.start()
-//  }
 }
