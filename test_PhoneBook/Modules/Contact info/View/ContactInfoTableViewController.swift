@@ -76,17 +76,21 @@ class ContactInfoTableViewController: UITableViewController, ContactInfoView {
   
   
   private func setEditMode(enable: Bool) {
-    phoneTextField.isUserInteractionEnabled = enable
-    fullnameTextField.isUserInteractionEnabled = enable
+    [phoneTextField, fullnameTextField, address1TextField, address2TextField, cityTextField ,zipCodeTextField].forEach {
+      $0?.isUserInteractionEnabled = enable
+    }
     let button: UIBarButtonItem
     if enable {
       button = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(editAction(sender:)))
       fullnameTextField.becomeFirstResponder()
     } else {
       button = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editAction(sender:)))
-      resignFirstResponder()
+      [phoneTextField, fullnameTextField, address1TextField, address2TextField, cityTextField ,zipCodeTextField].forEach {
+        $0?.resignFirstResponder()
+      }
       saveChanges()
     }
+
     navigationItem.setRightBarButton(button, animated: true)
   }
   
